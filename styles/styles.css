@@ -1,5 +1,4 @@
-
-  /* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap'); */
 
 
 /*  Global styles */
@@ -31,7 +30,12 @@ body {
     margin-bottom: 1.8rem;
 }
 
-.text  {
+.heading-3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text {
     font-size: 1.6rem;
     color: #727272;
 }
@@ -49,7 +53,7 @@ body {
     cursor: pointer;
     font-size: 2rem;
     margin-top: 3rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     text-transform: capitalize;
 }
 
@@ -124,13 +128,91 @@ body {
     max-width: 50rem;
 }
 
-.heading-2 > span:first-child {
+.heading-2>span:first-child {
     color: #727272;
 }
 
-.heading-2 > span:last-child {
+.heading-2>span:last-child {
     color: #FF900E;
     display: block;
+    position: relative;
+}
+
+/* feature love section */
+.feature-love {
+    padding: 3rem 13.5rem;
+}
+
+.feature-love-content {
+    padding-right: 2rem;
+}
+
+.feature-love-content .heading-2 {
+    color: #131313;
+    padding-left: 2rem;
+    border-left: 5px solid #FF900E;
+}
+
+.feature-love-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: start;
+}
+
+.feature-box {
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-left: 5px solid transparent;
+    transition: all .6s;
+}
+
+.feature-box:hover {
+    border-left: 5px solid #FF900E;
+}
+
+.featre-love-image-container {
+    padding-left: 3rem;
+    position: relative;
+}
+
+.feature-love-img {
+    width: 100%;
+    height: auto;
+}
+
+.feature-span {
+    display: block;
+    font-size: 6rem;
+    font-weight: 7oo;
+}
+
+.feature-love .btn {
+    position: absolute;
+    left: -2rem;
+    bottom: -5rem;
+}
+
+.fact {
+    padding: 3rem 13.5rem;
+}
+
+.fact .text {
+    max-width: 50rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.card {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #FF900E;
+    border-radius: 5px;
 }
 
 /* Responsive style */
@@ -146,13 +228,14 @@ body {
     .quick-feature {
         padding: 0;
     }
+
     .header-nav-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
     }
-    
+
     .quick-feature {
         flex-direction: column-reverse;
         padding: 0;
@@ -168,7 +251,47 @@ body {
     .quick-feature-content {
         min-width: 100%;
         padding: 2rem;
+        text-align: center;
     }
+
+    .feature-love {
+        padding: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .feature-love-container {
+        grid-template-columns: 1fr;
+    }
+
+    .featre-love-image-container {
+        padding-left: 0;
+    }
+
+    .feature-love .btn {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .fact {
+        padding: 3rem;
+        text-align: center;
+    }
+
+    .fact .text {
+        margin: 0 auto;
+    }
+
+    .card-container {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40%;
+        margin-bottom: 4rem;
+    }
+
+
 }
 
 /* Tablet or medium devices */
@@ -189,15 +312,52 @@ body {
     }
 
     .quick-feature-gallary {
-        grid-template-columns: 1fr;
-        padding: 4rem;
+        padding: 0 5rem;
         width: 100%;
-
     }
 
     .quick-feature-content {
         min-width: 100%;
-        padding: 4rem;
+        padding: 0 4rem;
+        text-align: center;
+    }
+
+    .feature-love {
+        padding: 3rem 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .feature-love-container {
+        grid-template-columns: 1fr;
+    }
+
+    .featre-love-image-container {
+        padding-left: 0;
+    }
+
+    .feature-love .btn {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .fact {
+        padding: 5rem;
+        text-align: center;
+    }
+
+    .fact .text {
+        margin: 0 auto;
+    }
+
+    .card-container {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .card {
+        width: 40%;
+        margin-bottom: 4rem;
     }
 }
 
@@ -211,6 +371,4 @@ body {
     }
 }
 
-@media screen and(min-width: 992px) and (max-width: 1440px) {
-    
-}
+@media screen and(min-width: 992px) and (max-width: 1440px) {}
